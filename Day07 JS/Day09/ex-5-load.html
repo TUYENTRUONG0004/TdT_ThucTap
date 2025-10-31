@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load data from json</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    
+    <section id="cate">
+        <h1>Danh mục</h1>
+        <ul>
+            <li><a href="#">item 1</a></li>
+        </ul>
+    </section>
+    <hr>
+    <section id="zone1">
+        <h2>Danh mục phòng</h2>
+        <ul class="list-group">
+            <li></li>
+        </ul>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        {
+  "phong_khach": [
+    {"name": "Bàn uống nước", "price": 8990000, "old_price": 10500000, "image": "images/1.jpg"},
+    {"name": "Kệ TV", "price": 4560000, "old_price": 5300000, "image": "images/ke-tv.jpg"},
+    {"name": "Kệ sách", "price": 4990000, "old_price": 6000000, "image": "images/ke-sach.jpg"},
+    {"name": "SOFA", "price": 8400000, "old_price": 10000000, "image": "images/sofa.jpg"}
+  ],
+  "phong_bep": [
+    {"name": "Bàn ăn", "price": 10550000, "old_price": 12000000, "image": "images/ban-an.jpg"},
+    {"name": "Bàn trà", "price": 3600000, "old_price": 4000000, "image": "images/ban-tra.jpg"}
+  ],
+  "phong_ngu": [
+    {"name": "Giường gỗ", "price": 4000000, "old_price": 5100000, "image": "images/giuong-go.jpg"},
+    {"name": "Tủ quần áo", "price": 11200000, "old_price": 14000000, "image": "images/tu-quan-ao.jpg"},
+    {"name": "Giường châu Âu", "price": 8999000, "old_price": 11500000, "image": "images/giuong-chau-au.jpg"}
+  ]
+}
+
+    </script>
+</body>
+</html>

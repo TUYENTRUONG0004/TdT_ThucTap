@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Sản phẩm nội thất</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <body>
+  <div class="container">
+    <div id="product-container"></div>
+  </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    async function loadProducts() {
+  try {
+    const res = await fetch("data/products.json");
+    const data = await res.json();
+
+    const container = document.getElementById("product-container");
+
+    for (const [category, products] of Object.entries(data)) {
+      let title = "";
+      if (category === "phong_khach") title = "PHÒNG KHÁCH";
+      if (category === "phong_bep") title = "PHÒNG BẾP";
+      if (category === "phong_ngu") title = "PHÒNG NGỦ";
+
+      const section = document.createElement("section");
+      section.innerHTML = `
+        <div class="section-header">
+          <h2>${title}</h2>
+          <a href="#">Xem tất cả</a>
+        </div>
+        <div class="product-grid">
+          ${products.map(p => `
+            <div class="product-card">
+              <img src="${p.image}" alt="${p.name}">
+              <div class="product-name">${p.name}</div>
+              <div class="old-price">${p.old_price.toLocaleString()} VND</div>
+              <div class="price">${p.price.toLocaleString()} VND</div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      container.appendChild(section);
+    }
+  } catch (error) {
+    console.error("Lỗi khi đọc dữ liệu:", error);
+  }
+}
+loadProducts();
+  </script>
+</body>
+</html>

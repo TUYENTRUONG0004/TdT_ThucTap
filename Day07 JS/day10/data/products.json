@@ -1,0 +1,17 @@
+{
+  "phong_khach": [
+    {"name": "Bàn uống nước", "price": 8990000, "old_price": 10500000, "image": "/images/1.jpg"},
+    {"name": "Kệ TV", "price": 4560000, "old_price": 5300000, "image": "/images/2.jpg"},
+    {"name": "Kệ sách", "price": 4990000, "old_price": 6000000, "image": "/images/3.jpg"},
+    {"name": "SOFA", "price": 8400000, "old_price": 10000000, "image": "/images/4.jpg"}
+  ],
+  "phong_bep": [
+    {"name": "Bàn ăn", "price": 10550000, "old_price": 12000000, "image": "/images/5.jpg"},
+    {"name": "Bàn trà", "price": 3600000, "old_price": 4000000, "image": "/images/1.jpg"}
+  ],
+  "phong_ngu": [
+    {"name": "Giường gỗ", "price": 4000000, "old_price": 5100000, "image": "/images/6.jpg"},
+    {"name": "Tủ quần áo", "price": 11200000, "old_price": 14000000, "image": "/images/7.jpg"},
+    {"name": "Giường châu Âu", "price": 8999000, "old_price": 11500000, "image": "/images/6.jpg"}
+  ]
+}
